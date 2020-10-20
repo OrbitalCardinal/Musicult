@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Musicult"
+    }
+  },
+  "defaultProject": "Musicult",
+  "cli": {
+    "analytics": false
+  }
 }
