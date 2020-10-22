@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Bhaina 2', cursive;
+}
+
+@media screen and (min-width: 1080px) {
+  .container {
+    height: 100vh; /* Abarca todo el alto de la pagina */
+    width: 100vw; /*a todo el ancho de la pagina */
+    display: grid; /* Define que se usa grid para el layout */
+    grid-template-columns: 1fr 1fr; /*Asigna dos columnas cada una ocupando la mitad*/
+    grid-template-rows: 1fr; /* Asigna una fila en la pantalla entera */
+    grid-template-areas: "login banner"; /* asigna nombres a las areas*/
+  }
+
+  body {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1079px)  {
+  .container {
+    height: 100vh; /* Abarca todo el alto de la pagina */
+    width: 100vw; /* Abarca todo el ancho de la pagina */
+    display: grid; /* Define que se usa grid para el layout */
+    grid-template-columns: 1fr; /*Asigna dos columnas cada una ocupando la mitad*/
+    grid-template-rows: 1fr 1fr; /* Asigna una fila en la pantalla entera */
+    grid-template-areas: "banner"
+                         "login"; /* asigna nombres a las areas*/
+  }
+
+  body {
+    overflow: auto;
+  }
+}
+
+
+.banner-area {
+  grid-area: banner; /* asigna div a area (banner) predefinida */
+  background-image: url(../../assets/img/chava.jpg);
+  background-size: cover;
+}
+
+
+.login-area {
+  font-size: 1.5em;
+  padding: 20% 20% 20% 20%;
+  grid-area: login; /* asigna div a area (login) predefinida */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.login-area * {
+  margin: 10px;
+}
+
+.userInputDiv {
+  border-radius: 10px;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
+
+.userInput {
+  border: none;
+  background-color:#D9D9D9;
+  color: #545454;
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-size: 0.7em;
+  width: 100%;
+}
+
+#ingresarButton {
+  padding: 5px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: #0074D1;
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-size: 0.7em;
+}
+
+#ingresarButton:hover {
+  background-color: #005eaa;
+  cursor: pointer;
+}
+
+#olvidaste {
+  text-decoration: none;
+  color: #000139;
+}
+
+#noCuenta {
+  color: #000139;
+}
+
+#registrate {
+  color: #0074D1;
+  text-decoration: none;
+}
+
+.fbtn{
+  padding: 3%;
+  font-size: 0.7em;
+  color: white;
+  background-color: #1883ba;
+  border-radius: 15px;
+  border: none;
+}
+
+.Gbth{
+  padding: 3%;
+  font-size: 0.7em;
+  color: white;
+  background-color: red;
+  border-radius: 15px;
+  border: none;
+}
+
+.No-Cuenta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}

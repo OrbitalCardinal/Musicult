@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Bhaina 2', cursive;
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1079px)  {
+  body {
+    overflow: auto;
+  }
+}

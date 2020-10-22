@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title> Musicult | Login</title>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="login-area">
+			<h2>Inicio de sesión</h2>
+			<!-- Seccion para username-->
+			<div class="userInputDiv">
+				<i class="material-icons">person</i>
+				<input [(ngModel)]="email" class="userInput" placeholder="Usuario o email" type='text'>
+			</div>
+
+			<div class="userInputDiv">
+				<i class="material-icons">lock</i>
+				<input [(ngModel)]="password" class="userInput" placeholder="Contraseña" type='password'>
+			</div>
+
+
+				<!-- Seccion para password-->
+			<button (click)='login()' id="ingresarButton">Ingresar</button>
+
+			<a id="olvidaste">¿Olvidaste tu contraseña?</a>
+			<div class="enlace">
+				<a href="#"><button class="fbtn">Facebook</button></a>
+				<a href="#"><button class="Gbth">Google</button></a>
+			</div>
+			<div class="No-Cuenta">
+				<p id="noCuenta">¿No tienes una cuenta?</p>
+				<a routerLink='/signup' id="registrate">Registrate</a>
+			</div>
+		</div>
+		<!-- <img class="iconouno" src="iconos/usuario.png"> -->
+
+		<div class="banner-area">
+			<!-- <img src="img/chava.jpeg" alt="Img Chava"> -->
+		</div>
+	</div>
+
+</body>
+

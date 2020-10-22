@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Musicult | Registro</title>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+	<div class="containerRegistro">
+
+		<h2>Registro</h2>
+		<!-- Seccion para Registro-->
+		<div class="registro">
+			<i class="material-icons">person</i>
+			<input [(ngModel)]="username" class="userInput" placeholder="Usuario o email" type='text'>
+    </div>
+    <!-- <p>User: {{username}}</p> -->
+		<div class="registro">
+			<i class="material-icons">lock</i>
+			<input [(ngModel)]="password" class="userInput" placeholder="Contraseña" type='password'>
+    </div>
+    <!-- <p>Contraseña: {{password}}</p> -->
+		<div class="registro">
+			<i class="material-icons">lock</i>
+			<input [(ngModel)]="confirmPassword" class="userInput" placeholder="Confirmar Contraseña" type='password'>
+    </div>
+    <!-- <p>Confirmar: {{confirmPassword}}</p> -->
+		<button (click)='signUp()' id="registrarButton">Registrar</button>
+		<div class="Ya-Cuenta">
+			<p id="noCuenta">¿Ya tienes una cuenta?</p>
+			<a routerLink='/' id="iniciaSesion">Inicia sesion</a>
+		</div>
+	</div>
+
+</body>
