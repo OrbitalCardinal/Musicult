@@ -134,7 +134,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .cover-img {
-    height: 30vh;
+    height: 20vh;
   }
 
   #song-previous {
@@ -156,7 +156,7 @@
 
 @media screen and (min-width: 1201px) {
   .cover-img {
-    height: 30vh;
+    height: 20vh;
   }
 
   #song-previous {
