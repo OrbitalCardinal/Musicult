@@ -1,22 +1,22 @@
 <div class="song-carousel-container">
+  <div (click)='slide_carousel($event)' id="song-previous">&lt;</div>
   <div class='song-carousel'>
     <div *ngFor='let song of songs' class='song-card'>
-      <div class='song-cover'>
-        <img src='../../../assets/img/gorillazTestCover.jpg' class='cover-img'>
+      <div class="song-container">
+        <div class='song-cover'>
+          <img src={{song.cover}} class='cover-img'>
+        </div>
+        <div class='song-info'>
+          <div class='song-title'>{{song.title}}</div>
+          <div class='song-album'>{{song.album}}</div>
+          <div class='song-duration'>{{song.duration}}</div>
+          <div class='song-artist'>{{song.artist}}</div>
+        </div>
+        <div *ngIf="song.exclusive" class="song-exclusive">Musicult exclusive</div>
       </div>
-      <div class='song-info'>
-        <div class='song-title'>{{song}}</div>
-        <div class='song-album'>Demon Days</div>
-        <div class='song-duration'>03:43</div>
-        <div class='song-artist'>Gorillaz</div>
       </div>
-      <div class="song-exclusive">Musicult exclusive</div>
-    </div>
   </div>
-  <div class="song-slider-buttons">
-    <div (click)='slide_carousel($event)' id="song-previous">&lt;</div>
-    <div (click)='slide_carousel($event)' id="song-next">&gt;</div>
-  </div>
+  <div (click)='slide_carousel($event)' id="song-next">&gt;</div>
 </div>
 
 

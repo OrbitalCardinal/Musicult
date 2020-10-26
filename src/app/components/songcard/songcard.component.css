@@ -2,34 +2,34 @@
 .song-carousel-container {
   display: flex;
   align-items: center;
+  /* background-color: rebeccapurple; */
 }
 .song-carousel {
   width: 100%;
   display: flex;
   align-items: center;
-  margin: 10px;
-  padding: 10px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px 10px 10px 0px;
   position: relative;
-  flex-wrap: nowrap;
   scroll-behavior: smooth;
   overflow: hidden;
   /* background-color: red; */
+}
+
+.song-container {
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.song-container:hover {
+  opacity: 0.8;
 }
 
 .song-card {
   margin: 10px;
   border: 2px solid black;
 }
-
-.song-slider-buttons {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  left: 0;
-  right: 0;
-}
-
 #song-previous {
   padding: 10px;
   font-weight: bold;
