@@ -2,18 +2,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { NowPlayingBarComponent } from './now-playing-bar/now-playing-bar.component';
-import { MainViewComponent } from './main-view/main-view.component';
-import { AppRoutingModule } from './app-routing.module';
-import { LoginComponent } from './login/login.component';
-import { SignUpComponent } from './signup/signup.component';
+
+
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { NowPlayingBarComponent } from './components/now-playing-bar/now-playing-bar.component';
+import { MainViewComponent } from './components/main-view/main-view.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignUpComponent } from './components/signup/signup.component';
+import { SongcardComponent } from './components/songcard/songcard.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 var firebaseConfig = {
@@ -34,7 +37,8 @@ var firebaseConfig = {
     NowPlayingBarComponent,
     MainViewComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    SongcardComponent,
   ],
   imports: [
     BrowserModule,

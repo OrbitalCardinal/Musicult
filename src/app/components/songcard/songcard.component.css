@@ -1,0 +1,136 @@
+
+.song-carousel-container {
+  display: flex;
+  align-items: center;
+}
+.song-carousel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.song-card {
+  margin: 10px;
+  border: 2px solid black;
+}
+
+.song-slider-buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+}
+
+#song-previous {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  background-color:rgba(0, 18, 42, 0.5);
+}
+
+#song-previous:hover {
+  background-color:rgba(0, 18, 42, 0.9);
+  cursor: pointer;
+}
+
+#song-next {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  background-color:rgba(0, 18, 42, 0.5);
+}
+
+#song-next:hover {
+  background-color:rgba(0, 18, 42, 0.9);
+  cursor: pointer;
+}
+
+.song-info {
+  padding: 10px;
+}
+
+.cover-img {
+  height: 30vh;
+}
+
+.song-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  --minFontSize: 12px;
+  --maxFontSize: 18px;
+  --scaler: 50vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+  line-height: var(--maxFontSize);
+}
+
+.song-album {
+  --minFontSize: 12px;
+  --maxFontSize: 16px;
+  --scaler: 50vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+  line-height: var(--maxFontSize);
+}
+
+.song-duration {
+  --minFontSize: 12px;
+  --maxFontSize: 16px;
+  --scaler: 50vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+  line-height: 20px;
+}
+
+.song-artist {
+  --minFontSize: 16px;
+  --maxFontSize: 20px;
+  --scaler: 50vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+  line-height: var(--maxFontSize);
+  font-weight: bold;
+}
+
+.song-exclusive {
+  --minFontSize: 12px;
+  --maxFontSize: 16px;
+  --scaler: 50vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+  text-align: center;
+  background-color: #00122A;
+  color: white;
+}
+
+
+/* @media screen and (max-width: 768px) {
+  .song-card {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .song-card {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .song-card {
+    width: 16%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .song-card {
+    width: 12%;
+  }
+} */

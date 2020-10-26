@@ -38,7 +38,7 @@ body {
 
 .banner-area {
   grid-area: banner; /* asigna div a area (banner) predefinida */
-  background-image: url(../../assets/img/chava.jpg);
+  background-image: url(../../../assets/img/chava.jpg);
   background-size: cover;
 }
 
