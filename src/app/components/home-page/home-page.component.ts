@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 
-export class HomePageComponent {}
+export class HomePageComponent {
+  ID: String[] = ['Uno','Dos','Tres'];
+}

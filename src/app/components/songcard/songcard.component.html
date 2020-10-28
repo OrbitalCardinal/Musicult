@@ -1,6 +1,6 @@
 <div class="song-carousel-container">
   <div (click)='slide_carousel($event)' id="song-previous">&lt;</div>
-  <div class='song-carousel'>
+  <div class='song-carousel' id={{ID}}>
     <div *ngFor='let song of songs' class='song-card'>
       <div class="song-container">
         <div class='song-cover'>

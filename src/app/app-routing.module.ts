@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'mainview', component: MainViewComponent, children: [
     {
       path: 'home',
-      component: HomePageComponent
+      component: HomePageComponent,
     },
     {
       path: 'profile',

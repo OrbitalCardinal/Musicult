@@ -6,7 +6,7 @@ mat-icon {
   color: #B5DFFB;
   width: 100%;
   font-size: 3rem;
-  margin: 1rem;
+  /* margin: 1rem; */
   transition: 0.25s ease;
 }
 
@@ -26,6 +26,7 @@ mat-icon {
 }
 
 .nav-item {
+  padding: 10px;
   transition: 0.3s ease;
 }
 
@@ -82,6 +83,10 @@ mat-icon {
   mat-icon {
     height: 100%;
     font-size: 2.5rem;
+  }
+
+  .nav-link {
+    width: 0%;
   }
 
 

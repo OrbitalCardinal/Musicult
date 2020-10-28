@@ -1,9 +1,22 @@
-
 .song-carousel-container {
   display: flex;
   align-items: center;
+  /* display: none; */
+  transition: 1s ease;
+  animation: fadeIn 1s ease;
   /* background-color: rebeccapurple; */
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .song-carousel {
   width: 100%;
   display: flex;
@@ -72,6 +85,7 @@
   }
 
   #song-previous {
+    display: none;
     padding: 10px;
     font-weight: bold;
     font-size: 20px;
@@ -80,11 +94,23 @@
   }
 
   #song-next {
+    display: none;
     padding: 10px;
     font-weight: bold;
     font-size: 20px;
     color: white;
     background-color:rgba(0, 18, 42, 0.5);
+  }
+
+  .song-carousel {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .song-carousel::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
   }
 }
 
@@ -94,6 +120,7 @@
   }
 
   #song-previous {
+    display: none;
     padding: 10px;
     font-weight: bold;
     font-size: 30px;
@@ -102,11 +129,22 @@
   }
 
   #song-next {
+    display: none;
     padding: 10px;
     font-weight: bold;
     font-size: 30px;
     color: white;
     background-color:rgba(0, 18, 42, 0.5);
+  }
+
+  .song-carousel {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .song-carousel::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -116,6 +154,7 @@
   }
 
   #song-previous {
+    display: none;
     padding: 10px;
     font-weight: bold;
     font-size: 30px;
@@ -124,12 +163,15 @@
   }
 
   #song-next {
+    display: none;
     padding: 10px;
     font-weight: bold;
     font-size: 30px;
     color: white;
     background-color:rgba(0, 18, 42, 0.5);
   }
+
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {

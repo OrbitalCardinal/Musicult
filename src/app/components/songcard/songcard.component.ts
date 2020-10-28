@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { Song } from 'src/app/models/songs.model';
 
 @Component({
@@ -7,7 +7,7 @@ import { Song } from 'src/app/models/songs.model';
   styleUrls: ['./songcard.component.css']
 })
 
-export class SongcardComponent {
+export class SongCardComponent {
   songs: Song[] = [
     new Song('Feel Good Inc.', 'Demon Days', 30000, 'Gorillaz', true, '../../assets/img/gorillazTestCover.jpg'),
     new Song('Smell Like Teen Spirit', 'Nevermind', 30000, 'Nirvana', false, '../../assets/img/Nirvana-Nevermind-Album-Cover.jpg'),
@@ -21,9 +21,12 @@ export class SongcardComponent {
     new Song('Si veo a Tu mamá', 'YHLQMDLG', 30000, 'Bad Bunny', true, '../../assets/img/YHLQMDLG.png'),
   ]
 
-  slide_carousel(event) {
+  @Input()
+  ID: string;
+
+  slide_carousel(event: HTMLElement) {
     var id_name: String = event['target'].id;
-    const carousel: HTMLElement = document.querySelector('.song-carousel');
+    const carousel: HTMLElement = document.getElementById(this.ID);
 
     if (id_name == 'song-next') {
       carousel.scrollLeft += carousel.offsetWidth;

@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
@@ -15,7 +15,6 @@ import { NowPlayingBarComponent } from './components/now-playing-bar/now-playing
 import { MainViewComponent } from './components/main-view/main-view.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/signup/signup.component';
-import { SongcardComponent } from './components/songcard/songcard.component';
 import { ProfilePageComponent } from './components/profile-page/profile-page.component'
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,6 +24,8 @@ import { PlaylistsPageComponent } from './components/playlists-page/playlists-pa
 import { SearchPageComponent } from './components/search-page/search-page.component'
 import { SettingsPageComponent } from './components/settings-page/settings-page.component';
 import { Playbar } from './components/playbar/playbar.component';
+import { SongCardComponent } from './components/songcard/songcard.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 
 var firebaseConfig = {
@@ -46,12 +47,13 @@ var firebaseConfig = {
     MainViewComponent,
     LoginComponent,
     SignUpComponent,
-    SongcardComponent,
     ProfilePageComponent,
     PlaylistsPageComponent,
     SearchPageComponent,
     SettingsPageComponent,
-    Playbar
+    HomePageComponent,
+    Playbar,
+    SongCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,8 +64,9 @@ var firebaseConfig = {
     AngularFireAuthModule, // auth
     AngularFireStorageModule,
     BrowserAnimationsModule,
-    MatIconModule // storage
+    MatIconModule, // storage
   ],
+  exports: [AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })

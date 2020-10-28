@@ -7,13 +7,23 @@ body {
 
 @media screen and (min-width: 1080px) {
   body {
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  app-root {
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 
 @media screen and (max-width: 1079px)  {
   body {
-    overflow: auto;
+    overflow: hidden;
+  }
+
+  app-root {
+    overflow: hidden;
   }
 }
 
