@@ -1,0 +1,18 @@
+app-navbar {
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    margin-left: 5rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin: 0;
+  }
+}
+
+

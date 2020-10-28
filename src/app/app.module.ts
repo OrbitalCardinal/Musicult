@@ -16,7 +16,14 @@ import { MainViewComponent } from './components/main-view/main-view.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/signup/signup.component';
 import { SongcardComponent } from './components/songcard/songcard.component';
+import { ProfilePageComponent } from './components/profile-page/profile-page.component'
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatIconModule } from '@angular/material/icon/';
+import { PlaylistsPageComponent } from './components/playlists-page/playlists-page.component';
+import { SearchPageComponent } from './components/search-page/search-page.component'
+import { SettingsPageComponent } from './components/settings-page/settings-page.component';
 
 
 var firebaseConfig = {
@@ -39,6 +46,10 @@ var firebaseConfig = {
     LoginComponent,
     SignUpComponent,
     SongcardComponent,
+    ProfilePageComponent,
+    PlaylistsPageComponent,
+    SearchPageComponent,
+    SettingsPageComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +58,9 @@ var firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule, // firestore
     AngularFireAuthModule, // auth
-    AngularFireStorageModule // storage
+    AngularFireStorageModule,
+    BrowserAnimationsModule,
+    MatIconModule // storage
   ],
   providers: [],
   bootstrap: [AppComponent]
