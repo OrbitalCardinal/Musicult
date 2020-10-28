@@ -19,7 +19,7 @@ export class LoginComponent {
   login() {
     this._afAuth.signInWithEmailAndPassword(this.email,this.password).then((user) => {
       if(firebase.auth().currentUser.emailVerified) {
-        this._router.navigate(['/mainview']);
+        this._router.navigate(['/mainview/home']);
       }
     }).catch((e) => {
       // console.log(e);

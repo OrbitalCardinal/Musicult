@@ -24,6 +24,7 @@ import { MatIconModule } from '@angular/material/icon/';
 import { PlaylistsPageComponent } from './components/playlists-page/playlists-page.component';
 import { SearchPageComponent } from './components/search-page/search-page.component'
 import { SettingsPageComponent } from './components/settings-page/settings-page.component';
+import { Playbar } from './components/playbar/playbar.component';
 
 
 var firebaseConfig = {
@@ -49,7 +50,8 @@ var firebaseConfig = {
     ProfilePageComponent,
     PlaylistsPageComponent,
     SearchPageComponent,
-    SettingsPageComponent
+    SettingsPageComponent,
+    Playbar
   ],
   imports: [
     BrowserModule,

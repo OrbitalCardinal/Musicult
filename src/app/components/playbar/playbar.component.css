@@ -1,0 +1,11 @@
+:root {
+  font-size: 16px;
+}
+.playbar {
+  margin-left: 5rem;
+  height: 4rem;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: #0074D1;
+}
