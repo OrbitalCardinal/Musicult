@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class HomePageComponent {
-  ID: String[] = ['Uno','Dos','Tres'];
+  ID: String[] = ['Uno','Dos','Tres']; //Ids for individual carousels
 }

@@ -11,7 +11,6 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { NowPlayingBarComponent } from './components/now-playing-bar/now-playing-bar.component';
 import { MainViewComponent } from './components/main-view/main-view.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/signup/signup.component';
@@ -43,7 +42,6 @@ var firebaseConfig = {
   declarations: [
     AppComponent,
     NavbarComponent,
-    NowPlayingBarComponent,
     MainViewComponent,
     LoginComponent,
     SignUpComponent,

@@ -4,7 +4,6 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { LoginComponent } from './components/login/login.component';
 import { MainViewComponent } from './components/main-view/main-view.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { NowPlayingBarComponent } from './components/now-playing-bar/now-playing-bar.component';
 import { PlaylistsPageComponent } from './components/playlists-page/playlists-page.component';
 import { ProfilePageComponent } from './components/profile-page/profile-page.component';
 import { SearchPageComponent } from './components/search-page/search-page.component';
@@ -38,7 +37,6 @@ const routes: Routes = [
     }
 ] },
   { path: 'navbar', component: NavbarComponent },
-  { path: 'now-playing', component: NowPlayingBarComponent }
 ]
 
 @NgModule({
