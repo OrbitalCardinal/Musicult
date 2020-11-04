@@ -25,6 +25,8 @@ import { SettingsPageComponent } from './components/settings-page/settings-page.
 import { Playbar } from './components/playbar/playbar.component';
 import { SongCardComponent } from './components/songcard/songcard.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { UploadComponent } from './components/upload/upload.component';
+
 
 
 var firebaseConfig = {
@@ -52,6 +54,8 @@ var firebaseConfig = {
     HomePageComponent,
     Playbar,
     SongCardComponent,
+    UploadComponent,
+    
   ],
   imports: [
     BrowserModule,
