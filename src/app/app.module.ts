@@ -27,7 +27,8 @@ import { SongCardComponent } from './components/songcard/songcard.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { UploadComponent } from './components/upload/upload.component';
 
-
+// Forms
+import { ReactiveFormsModule } from '@angular/forms';
 
 var firebaseConfig = {
   apiKey: "AIzaSyB_imvC8bkdRcTCXOs2aVHSXuBvpKbhLF0",
@@ -67,6 +68,7 @@ var firebaseConfig = {
     AngularFireStorageModule,
     BrowserAnimationsModule,
     MatIconModule, // storage
+    ReactiveFormsModule,
   ],
   exports: [AppRoutingModule],
   providers: [],

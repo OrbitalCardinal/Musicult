@@ -1,6 +1,36 @@
-<h3>Subir tu cancion:</h3>
-<img [src]="imgURL" height="200" *ngIf="imgURL"><br>
+<!-- <h3>Subir tu cancion:</h3> -->
+<!-- <img [src]="imgURL" height="200" *ngIf="imgURL"><br>
 <span style="color:red;" *ngIf="message">{{message}}</span><br>
 <input #file type="file" accept='image/*' (change)="preview(file.files)" />
+<br> -->
 
-
+<h1>Subir archivos a Cloud Storage</h1>
+<div class="contenedor">
+    <div class="contenedor-formulario">
+        <p class="download" *ngIf="finalizado">URL de descarga <a href="{{urlPublic}}" target="_blank">Descargar</a></p>
+        <form [formGroup]="uploadFileForm" (ngSubmit)="uploadFile()">
+            <label>
+                <input type="file" 
+                formControlName="archivo"
+                (change)="changeFile($event)"/>
+                <br>
+                <span>
+                    Elegir un archivo...
+                </span>
+                <br>
+                <span>
+                    {{mensajeArchivo}}
+                </span>
+            </label>
+            <hr>
+            <progress 
+                *ngIf="porcentaje > 0 && porcentaje < 100"
+                value="{{porcentaje}}" max="100">
+                {{porcentaje}}%
+            </progress>
+            <button
+                [ngClass]="{'button': true, 'is-success': true, 'is-large': true, 'is-loading': porcentaje > 0 && porcentaje < 100}"
+                [disabled]="!uploadFileForm.valid && (porcentaje > 0 && porcentaje < 100)">Subir archivo</button>
+        </form>
+    </div>
+</div>
