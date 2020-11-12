@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AlbumPageComponent } from './components/album-page/album-page.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { LoginComponent } from './components/login/login.component';
 import { MainViewComponent } from './components/main-view/main-view.component';
@@ -34,6 +35,10 @@ const routes: Routes = [
     {
       path: 'settings',
       component: SettingsPageComponent
+    },
+    {
+      path: 'album',
+      component: AlbumPageComponent
     }
 ] },
   { path: 'navbar', component: NavbarComponent },

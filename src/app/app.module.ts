@@ -29,6 +29,7 @@ import { UploadComponent } from './components/upload/upload.component';
 
 // Forms
 import { ReactiveFormsModule } from '@angular/forms';
+import { AlbumPageComponent } from './components/album-page/album-page.component';
 
 var firebaseConfig = {
   apiKey: "AIzaSyB_imvC8bkdRcTCXOs2aVHSXuBvpKbhLF0",
@@ -56,7 +57,7 @@ var firebaseConfig = {
     Playbar,
     SongCardComponent,
     UploadComponent,
-    
+    AlbumPageComponent,
   ],
   imports: [
     BrowserModule,
