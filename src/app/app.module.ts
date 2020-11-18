@@ -30,6 +30,7 @@ import { UploadComponent } from './components/upload/upload.component';
 // Forms
 import { ReactiveFormsModule } from '@angular/forms';
 import { AlbumPageComponent } from './components/album-page/album-page.component';
+import { SuggestionsComponent } from './components/suggestions/suggestions.component';
 
 var firebaseConfig = {
   apiKey: "AIzaSyB_imvC8bkdRcTCXOs2aVHSXuBvpKbhLF0",
@@ -58,6 +59,7 @@ var firebaseConfig = {
     SongCardComponent,
     UploadComponent,
     AlbumPageComponent,
+    SuggestionsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,10 @@
-<songcard *ngFor="let id of ID" [ID]="id"></songcard>
+<!-- Home Banner -->
+<div class="portrait">
+    <img src="../../../assets/img/home-portada.png" alt="portada">
+</div>
+<!-- Home Main Content -->
+<div class="container">
+    <h2 class="new-artist text-center">Descubre los artistas exclusivos de la plataforma</h2>
+    <div class="divider"></div>
+    <songcard *ngFor="let id of ID" [ID]="id"></songcard>
+</div>

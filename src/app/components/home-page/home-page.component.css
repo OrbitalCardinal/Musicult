@@ -1,1 +1,25 @@
-
+.new-artist {
+    font-weight: 500;
+}
+.divider {
+    display: block;
+    background-color: #959494;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.portrait {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+}
+.portrait img {
+    display: block;
+    width: 100%;
+}

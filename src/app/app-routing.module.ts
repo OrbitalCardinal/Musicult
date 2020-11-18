@@ -10,6 +10,7 @@ import { ProfilePageComponent } from './components/profile-page/profile-page.com
 import { SearchPageComponent } from './components/search-page/search-page.component';
 import { SettingsPageComponent } from './components/settings-page/settings-page.component';
 import { SignUpComponent } from './components/signup/signup.component';
+import { SuggestionsComponent } from './components/suggestions/suggestions.component';
 
 
 const routes: Routes = [
@@ -39,6 +40,10 @@ const routes: Routes = [
     {
       path: 'album',
       component: AlbumPageComponent
+    },
+    {
+      path: 'suggestions',
+      component: SuggestionsComponent
     }
 ] },
   { path: 'navbar', component: NavbarComponent },

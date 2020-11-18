@@ -1,3 +1,11 @@
+/* Main Container */
+.container {
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+/* Album Container */
 .addAlbumContainer {
     box-sizing: border-box;
     display: flex;
@@ -27,7 +35,6 @@
 }
 
 /* Modify Album, Artist Name */
-
 .titleFormContainer #modifyAlbum p {
     font-size: 40px;
     color: black;

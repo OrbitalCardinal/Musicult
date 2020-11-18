@@ -1,0 +1,159 @@
+.container {
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.portrait {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    height: 240px;
+}
+
+.portrait.especialDivImg {
+    background-image: url('../../../assets/img/search-page-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+}
+
+.search-bar {
+    background-color: rgba(181, 223, 251, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    padding: 35px;
+    border-radius: 40px;
+}
+
+.search-icon {
+    width: 50px;
+}
+
+input[id="search"] {
+    display: block;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 0px;
+    /* padding: 10px; */
+    color: #4D4D4D;
+    line-height: 1.6;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: rgba(181, 223, 251, 0.0);
+}
+
+/* Card Container */
+
+.cards-container {
+    padding: 15px 50px 15px 125px;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 50px;
+    column-gap: 50px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-template-columns: auto auto auto auto;
+    overflow: hidden;
+}
+
+.cards-container .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 295px;
+    height: 250px;
+}
+
+.cards-container .card .card-label {
+    background: rgba(0, 18, 42, 0.5);
+    border-radius: 25px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cards-container .card .card-label .card-title {
+    margin: 0;
+    color: white;
+    font-weight: lighter;
+    font-size: 36px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+}
+
+.cards-container .card.classic {
+    background-image: url('../../../assets/img/classic-music.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cards-container .card.country {
+    background-image: url('../../../assets/img/country-music.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cards-container .card.disco {
+    background-image: url('../../../assets/img/disco-music.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cards-container .card.electronic {
+    background-image: url('../../../assets/img/electronic-music.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cards-container .card.indie {
+    background-image: url('../../../assets/img/indie-music.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cards-container .card.jazz {
+    background-image: url('../../../assets/img/jazz-music.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cards-container .card.pop {
+    background-image: url('../../../assets/img/pop-music.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cards-container .card.rock {
+    background-image: url('../../../assets/img/rock-music.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Right Arrow */
+.right-arrow button {
+    background-color: #fff;
+    border: 0px;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
