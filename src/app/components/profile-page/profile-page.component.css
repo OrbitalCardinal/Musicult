@@ -16,80 +16,6 @@
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-.perfil-superior{
-
-position: absolute;
-width: 1500px;
-height: 450px;
-left: 5.2%;
-right: 50.21%;
-display: block;
-top: 0px;
-background-image: url(../../../assets/img/phoebe-fondo.jpg);
-background-size: cover;
-}
-
-.foto-perfil{
-
-position: absolute;
-border-radius:150px;
-width:200px;
-height:200px;
-left: 43.16%;
-right: 43.16%;
-top: 6.42%;
-bottom: 49.91%;
-background-image: url(../../../assets/img/phoebe-perfil.jpg);
-background-size: cover;
-}
-
-.rectangle-perfil{
-background: rgba(255, 255, 255, 0.5);
-
-}
-
-#editarperfilButton {
-    
-    position: absolute;
-    left: 49.21%;
-    right: 60.21%;
-    top: 34.68%;
-    bottom: 34.86%;
-    width:150px;
-    height: 30px;
-    
-    padding: 5px;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    background-color: #000139;
-    font-family: 'Baloo Bhaina 2', cursive;
-    font-size: 0.7em;
-  }
-  
-  #editarperfilButton:hover {
-    background-color: #005eaa;
-    cursor: pointer;
-  }
-
-  #username{
-    position: absolute;
-    left: 50.21%;
-    right: 50.21%;
-    top: 34.68%;
-    bottom: 44.86%;
-    
-    font-family: Baloo Bhaina 2;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 101px;
-    
-    
-    color: #000000;   
-  }
-=======
 .portrait {
     margin: 0;
     padding: 0;
@@ -243,4 +169,3 @@ background: rgba(255, 255, 255, 0.5);
     padding: 0;
     line-height: 1.5;
 }
->>>>>>> dev-erick
